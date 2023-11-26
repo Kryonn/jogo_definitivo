@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a6c82e8062fb9e41a99eea758a92d78
+guid: 5fa60e476bf4448409d4f928c3194be7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hit-verde.png_0
+      name: Hit (32x34)-Azul.png_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38d1a099fb8a9b4449e568fce86652fe
-      internalID: 331206578
+      spriteID: b172db4abd6573a43a627aa65b7f581a
+      internalID: -15720546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_1
+      name: Hit (32x34)-Azul.png_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30db2c21ccd57b14a89b8b7ff751daca
-      internalID: -678732322
+      spriteID: 6659caa368ba787498debcfae99c20c9
+      internalID: -199714029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_2
+      name: Hit (32x34)-Azul.png_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdbc7c9a41adcc14eb39773b6be93a16
-      internalID: -911450921
+      spriteID: 6f263c9f9f478f74fb921c26d4e09750
+      internalID: -1521225511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_3
+      name: Hit (32x34)-Azul.png_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9ff014b34944f443b340dfb18497772
-      internalID: -2097138415
+      spriteID: 01744a09ed315e4408b1accb8fe939f3
+      internalID: -2035304634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_4
+      name: Hit (32x34)-Azul.png_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b415fd97ba77294e971311d095371e3
-      internalID: -2075692847
+      spriteID: e316a941411e953499efaac297ec2f92
+      internalID: 349529614
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hit-verde.png_0: 331206578
-      hit-verde.png_1: -678732322
-      hit-verde.png_2: -911450921
-      hit-verde.png_3: -2097138415
-      hit-verde.png_4: -2075692847
+      Hit (32x34)-Azul.png_0: -15720546
+      Hit (32x34)-Azul.png_1: -199714029
+      Hit (32x34)-Azul.png_2: -1521225511
+      Hit (32x34)-Azul.png_3: -2035304634
+      Hit (32x34)-Azul.png_4: 349529614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

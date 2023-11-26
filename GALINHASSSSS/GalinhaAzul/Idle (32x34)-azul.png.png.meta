@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a6c82e8062fb9e41a99eea758a92d78
+guid: 5e91ffecafbc9e14cb33c761f01b76e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hit-verde.png_0
+      name: Idle (32x34)-azul.png_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38d1a099fb8a9b4449e568fce86652fe
-      internalID: 331206578
+      spriteID: 3d6a7b02f0693b64c9802ab963635295
+      internalID: 774392898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_1
+      name: Idle (32x34)-azul.png_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30db2c21ccd57b14a89b8b7ff751daca
-      internalID: -678732322
+      spriteID: c917908de14a2ce4398481d88a3b3803
+      internalID: 1741487661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_2
+      name: Idle (32x34)-azul.png_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdbc7c9a41adcc14eb39773b6be93a16
-      internalID: -911450921
+      spriteID: f48001beee2190749877113719db0b2b
+      internalID: -748543727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_3
+      name: Idle (32x34)-azul.png_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9ff014b34944f443b340dfb18497772
-      internalID: -2097138415
+      spriteID: 54e72067f5637a2499b7a52a471969c9
+      internalID: -1805594841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit-verde.png_4
+      name: Idle (32x34)-azul.png_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,8 +221,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b415fd97ba77294e971311d095371e3
-      internalID: -2075692847
+      spriteID: 1a2176fed0b8ace47b7ba3c89cfa71a6
+      internalID: -1774495006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe167d9f4303ee45ad00a35d84cffb3
+      internalID: -1705127179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7143649c04c54a42904c383975bd1f7
+      internalID: -1071036087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbc17667b3b01842b38feaae726af04
+      internalID: -878531430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b5afd589abc65488feb9ee58051466
+      internalID: -725810506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b52de4668fcb74dae37618b8d31ddd
+      internalID: 527125445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c86b615f2e65442bddc00b5c67641d
+      internalID: 614224987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a37066f8f4dbaa44bd814befd83133f
+      internalID: -561760642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle (32x34)-azul.png_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234b1ee43a1a23541bf2a2d5c7258125
+      internalID: -1218067032
       vertices: []
       indices: 
       edges: []
@@ -238,11 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hit-verde.png_0: 331206578
-      hit-verde.png_1: -678732322
-      hit-verde.png_2: -911450921
-      hit-verde.png_3: -2097138415
-      hit-verde.png_4: -2075692847
+      Idle (32x34)-azul.png_0: 774392898
+      Idle (32x34)-azul.png_1: 1741487661
+      Idle (32x34)-azul.png_10: 614224987
+      Idle (32x34)-azul.png_11: -561760642
+      Idle (32x34)-azul.png_12: -1218067032
+      Idle (32x34)-azul.png_2: -748543727
+      Idle (32x34)-azul.png_3: -1805594841
+      Idle (32x34)-azul.png_4: -1774495006
+      Idle (32x34)-azul.png_5: -1705127179
+      Idle (32x34)-azul.png_6: -1071036087
+      Idle (32x34)-azul.png_7: -878531430
+      Idle (32x34)-azul.png_8: -725810506
+      Idle (32x34)-azul.png_9: 527125445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
