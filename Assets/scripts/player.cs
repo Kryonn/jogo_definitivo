@@ -11,6 +11,8 @@ public class player : MonoBehaviour
 
     public bool isjumping;
     public bool plat3;
+    public bool start;
+
 
     private Rigidbody2D rig;
     private Animator anim;
@@ -19,6 +21,7 @@ public class player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        start = true;
     }
 
     // Update is called once per frame
@@ -39,25 +42,33 @@ public class player : MonoBehaviour
 
     void Move()
     {
-        Vector3 movement = new Vector3 (Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += movement * Time.deltaTime * Speed;
+        //if(Input.GetAxis("Horizontal") == 1f)
+        //{
+        //    start = true;
+        //}
 
-        if(Input.GetAxis("Horizontal") < 0f)
+        //if(start == true)
+        //{
+        //    Vector3 movement = new Vector3 (1f, 0f, 0f);
+        //    transform.position += movement * Time.deltaTime * Speed;
+        //}
+
+        if(start == true)
         {
             anim.SetBool("walk", true);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
 
-        if(Input.GetAxis("Horizontal") > 0f)
-        {
-            anim.SetBool("walk", true);
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
-        }
-
-        if(Input.GetAxis("Horizontal") == 0f)
-        {
-            anim.SetBool("walk", false);
-        }
+        //if(Input.GetAxis("Horizontal") > 0f)
+        //{
+        //    anim.SetBool("walk", true);
+        //    transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        //}
+        //
+        //if(Input.GetAxis("Horizontal") == 0f)
+        //{
+        //    anim.SetBool("walk", false);
+        //}
             
     }
 
