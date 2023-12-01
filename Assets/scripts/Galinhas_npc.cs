@@ -8,14 +8,12 @@ public class Galinhas_npc : MonoBehaviour
     [SerializeField] GameObject[] galinhas;
     private SpriteRenderer sr;
     private CircleCollider2D circle;
-    private int cont;
     
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         circle = GetComponent<CircleCollider2D>();
-        cont = 0;
     }
 
     // Update is called once per frame
@@ -32,15 +30,14 @@ public class Galinhas_npc : MonoBehaviour
         {
             sr.enabled = false;
             circle.enabled = false;
-            Destroy(gameObject, 1f);
-            
+            Destroy(gameObject, 1f); 
         }
-        if(collider.gameObject.tag == "Player")
-        {
-            var position = new Vector3(-5.73f - cont, transform.position.y);
-            GameObject gameObject = Instantiate(galinhas[Random.Range(0, galinhas.Length)], position, Quaternion.identity);
-            cont++;
-            
-        }
+        //if(collider.gameObject.tag == "Player")
+        //{
+        //    var position = new Vector3(-5.73f - cont, transform.position.y);
+        //    GameObject gameObject = Instantiate(galinhas[Random.Range(0, galinhas.Length)], position, Quaternion.identity);
+        //    cont++;
+        //    
+        //}
     }
 }

@@ -12,6 +12,12 @@ public class player : MonoBehaviour
     public bool isjumping;
     public bool plat3;
     public bool start;
+    public bool allow;
+    public int cor;
+    public bool ok;
+    public fila f;
+    public float y;
+    
 
 
     private Rigidbody2D rig;
@@ -22,6 +28,7 @@ public class player : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         start = true;
+        f.cria();
     }
 
     // Update is called once per frame
@@ -29,6 +36,9 @@ public class player : MonoBehaviour
     {
         Move();
         Jump();
+
+        y = rig.position.y;
+        
 
 
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
@@ -38,6 +48,15 @@ public class player : MonoBehaviour
                 StartCoroutine(DisableCollision());
             }
         }
+        
+        if(allow == true)
+        {
+            f.Insere(cor, out ok);
+            
+            allow = false;
+        }
+
+        
     }
 
     void Move()
@@ -104,7 +123,27 @@ public class player : MonoBehaviour
                 current = collision.gameObject;
             }
         }
+        
     }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.gameObject.layer == 14)
+        {
+            allow = true;
+            cor = 1;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if(collider.gameObject.layer == 14)
+        {
+            allow = false;
+            cor = 0;
+        }
+    }
+
 
     void OnCollisionExit2D(Collision2D collision)
     {
