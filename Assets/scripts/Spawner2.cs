@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Spawner2 : MonoBehaviour
 {
     [SerializeField] GameObject[] obstpre;
     [SerializeField] float t1, t2;
@@ -30,17 +30,17 @@ public class Spawner : MonoBehaviour
             plat = Random.Range(t3, t4);
             if(plat == 1)
             {
-                y = -2.65f;
+                y = -3.154f;
             }
             else
             {
                 if(plat == 2)
                 {
-                    y = 0.25f;
+                    y = -0.26f;
                 }
                 else
                 {
-                    y = 3.27f;
+                    y = 2.75f;
                 }
             }
             var wanted = Random.Range(t1, t2);
