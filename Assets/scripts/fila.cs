@@ -7,10 +7,11 @@ public class fila : MonoBehaviour
     public Galinha Primeiro;
     public Galinha Ultimo;
     public int Qtd;
-    public GameObject[] Cor1;
-    public GameObject[] Cor2;
-    public GameObject[] Cor3;
-    public GameObject[] Cor4;
+    //public GameObject[] Cor1;
+    //public GameObject[] Cor2;
+    //public GameObject[] Cor3;
+    //public GameObject[] Cor4;
+    public List<GameObject> Cores;
     public float y;
     player a;
 
@@ -18,6 +19,7 @@ public class fila : MonoBehaviour
     public class Galinha
     {
         public int cor;
+        public GameObject obj;
         public Galinha Next;
     }
 
@@ -62,26 +64,26 @@ public class fila : MonoBehaviour
             if(cor == 1)
             {
                 g.cor = 1;
-                GameObject gameObject = Instantiate(Cor1[Random.Range(0, Cor1.Length)], position, Quaternion.identity);
+                g.obj = Instantiate(Cores[0], position, Quaternion.identity);
             }
             else
             {
                 if(cor == 2)
                 {
                     g.cor = 2;
-                    GameObject gameObject = Instantiate(Cor2[Random.Range(0, Cor2.Length)], position, Quaternion.identity);
+                    g.obj = Instantiate(Cores[1], position, Quaternion.identity);
                 }
                 else
                 {
                     if(cor == 3)
                     {
                         g.cor = 3;
-                        GameObject gameObject = Instantiate(Cor3[Random.Range(0, Cor3.Length)], position, Quaternion.identity);
+                        g.obj = Instantiate(Cores[2], position, Quaternion.identity);
                     }
                     else
                     {
                         g.cor = 4;
-                        GameObject gameObject = Instantiate(Cor4[Random.Range(0, Cor4.Length)], position, Quaternion.identity);
+                        g.obj = Instantiate(Cores[3], position, Quaternion.identity);
                     }
                 }
             }
@@ -105,7 +107,7 @@ public class fila : MonoBehaviour
         Galinha g;
         if (Vazio())
         {
-            cor = 0; // ou algum valor padrão
+            cor = 5;
             ok = false;
         }
         else
@@ -113,6 +115,7 @@ public class fila : MonoBehaviour
             cor = Primeiro.cor;
             Qtd--;
             ok = true;
+            g = Primeiro;
             if (Primeiro == Ultimo)
             {
                 Primeiro = null;
@@ -120,9 +123,10 @@ public class fila : MonoBehaviour
             }
             else
             {
-                g = Primeiro;
                 Primeiro = g.Next;
             }
+            Destroy(g.obj, 0f);
+            g = null;
         }
     }
 }

@@ -16,11 +16,6 @@ public class Spawner : MonoBehaviour
         StartCoroutine(ObsSpawn());
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //   
-    //}
 
     IEnumerator ObsSpawn()
     {

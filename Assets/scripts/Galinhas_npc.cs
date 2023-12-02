@@ -32,12 +32,6 @@ public class Galinhas_npc : MonoBehaviour
             circle.enabled = false;
             Destroy(gameObject, 1f); 
         }
-        //if(collider.gameObject.tag == "Player")
-        //{
-        //    var position = new Vector3(-5.73f - cont, transform.position.y);
-        //    GameObject gameObject = Instantiate(galinhas[Random.Range(0, galinhas.Length)], position, Quaternion.identity);
-        //    cont++;
-        //    
-        //}
+        
     }
 }

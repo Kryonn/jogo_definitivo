@@ -17,6 +17,7 @@ public class player : MonoBehaviour
     public bool ok;
     public fila f;
     public float y;
+    public bool hit;
     
 
 
@@ -71,38 +72,24 @@ public class player : MonoBehaviour
             allow = false;
         }
 
+        if(hit == true)
+        {
+            f.Retira(out cor, out ok);
+
+            hit = false;
+        }
+
         
     }
 
     void Move()
     {
-        //if(Input.GetAxis("Horizontal") == 1f)
-        //{
-        //    start = true;
-        //}
-
-        //if(start == true)
-        //{
-        //    Vector3 movement = new Vector3 (1f, 0f, 0f);
-        //    transform.position += movement * Time.deltaTime * Speed;
-        //}
 
         if(start == true)
         {
             anim.SetBool("walk", true);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
-
-        //if(Input.GetAxis("Horizontal") > 0f)
-        //{
-        //    anim.SetBool("walk", true);
-        //    transform.eulerAngles = new Vector3(0f, 180f, 0f);
-        //}
-        //
-        //if(Input.GetAxis("Horizontal") == 0f)
-        //{
-        //    anim.SetBool("walk", false);
-        //}
             
     }
 
@@ -138,6 +125,8 @@ public class player : MonoBehaviour
                 current = collision.gameObject;
             }
         }
+
+        
         
     }
 
@@ -148,6 +137,10 @@ public class player : MonoBehaviour
             allow = true;
             cor = 1;
         }
+        if(collider.gameObject.layer == 4)
+        {
+            hit = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collider)
@@ -156,6 +149,10 @@ public class player : MonoBehaviour
         {
             allow = false;
             cor = 0;
+        }
+        if(collider.gameObject.layer == 4)
+        {
+            hit = false;
         }
     }
 
