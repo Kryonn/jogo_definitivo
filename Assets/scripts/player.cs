@@ -38,6 +38,21 @@ public class player : MonoBehaviour
         Jump();
 
         y = rig.position.y;
+        if(rig.position.y >= 2)
+        {
+            y = 3;
+        }
+        else
+        {
+            if(rig.position.y < 2 && rig.position.y > -1)
+            {
+                y = 0;
+            }
+            else
+            {
+                y = -3;
+            }
+        }
         
 
 
