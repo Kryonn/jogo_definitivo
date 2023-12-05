@@ -41,17 +41,17 @@ public class player : MonoBehaviour
         y = rig.position.y;
         if(rig.position.y >= 2)
         {
-            y = 3;
+            y = 2.933118f;
         }
         else
         {
             if(rig.position.y < 2 && rig.position.y > -1)
             {
-                y = 0;
+                y = -0.1473702f;
             }
             else
             {
-                y = -3;
+                y = -3.042978f;
             }
         }
         
@@ -75,7 +75,6 @@ public class player : MonoBehaviour
         if(hit == true)
         {
             f.Retira(out cor, out ok);
-
             hit = false;
         }
 
@@ -100,13 +99,8 @@ public class player : MonoBehaviour
         {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
             
-
-
-            if(isjumping == true)
-            {
-                anim.SetBool("jump", true);
-            }
         }
+        
         
     }
 
@@ -121,21 +115,61 @@ public class player : MonoBehaviour
         {
             if(collision.gameObject.layer == 10)
             {
+                isjumping = false;
                 plat3 = true;
                 current = collision.gameObject;
             }
         }
+    }
 
-        
-        
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 8 || collision.gameObject.layer == 9)
+        {
+            isjumping = true;
+            current = null;
+        }
+        else
+        {
+            if(collision.gameObject.layer == 10)
+            {
+                isjumping = true;
+                plat3 = false;
+                current = null;
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.layer == 14)
+        if(collider.gameObject.layer == 15)
         {
             allow = true;
             cor = 1;
+        }
+        else
+        {
+            if(collider.gameObject.layer == 16)
+            {
+                allow = true;
+                cor = 2;
+            }
+            else
+            {
+                if(collider.gameObject.layer == 17)
+                {
+                    allow = true;
+                    cor = 3;
+                }      
+                else
+                {
+                    if(collider.gameObject.layer == 18)
+                {
+                    allow = true;
+                    cor = 4;
+                }
+                }
+            }
         }
         if(collider.gameObject.layer == 4)
         {
@@ -145,7 +179,7 @@ public class player : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collider)
     {
-        if(collider.gameObject.layer == 14)
+        if(collider.gameObject.layer == 15 || collider.gameObject.layer == 16 || collider.gameObject.layer == 17 || collider.gameObject.layer == 18)
         {
             allow = false;
             cor = 0;
@@ -157,15 +191,7 @@ public class player : MonoBehaviour
     }
 
 
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if(collision.gameObject.layer == 8  || collision.gameObject.layer == 9 || collision.gameObject.layer == 10)
-        {
-            isjumping = true;
-            current = null;
-            plat3 = false;
-        }
-    }
+    
 
     private IEnumerator DisableCollision()
     {

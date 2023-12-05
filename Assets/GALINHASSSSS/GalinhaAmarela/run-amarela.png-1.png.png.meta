@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a85deb70bbe65e4480117012c1eb8d9
+guid: cf4f8863771edaf4d9fe68973f96fe62
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle-amarela.png_0
+      name: run-amarela.png-1.png_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecda24db6eb68b44aaca95d170e3cc4f
-      internalID: 974814133
+      spriteID: 50ccb7e07ccf3cd4f89b1883272c1fda
+      internalID: -2008265153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_1
+      name: run-amarela.png-1.png_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5edc27974dca9e64da1cd219bf6e956e
-      internalID: 257689175
+      spriteID: 2af2bae7bbb703e448f4a10893d71159
+      internalID: -1686175924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_2
+      name: run-amarela.png-1.png_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f39c679a371d3be4cb90b4b0c8bda2cf
-      internalID: 1157460672
+      spriteID: cc965c3eb53332a40b4bb3c40d0f3574
+      internalID: 482387263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_3
+      name: run-amarela.png-1.png_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e6dc33fd5cd7394981997bb8fb83c2b
-      internalID: -341328066
+      spriteID: efcdd872c61d8034fa2b9304402fd2f1
+      internalID: 405894733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_4
+      name: run-amarela.png-1.png_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28a66a2493d27c44cb6a6dd140ec6a21
-      internalID: -1929349957
+      spriteID: 6a0f224eae2b6f34cb802485c6d1ddba
+      internalID: -2001578492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_5
+      name: run-amarela.png-1.png_5
       rect:
         serializedVersion: 2
         x: 160
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 531b9d0500636784380bbf6e41a88075
-      internalID: 547752306
+      spriteID: b3fe4e895edb99d408a34db2c4003dc7
+      internalID: 1099244134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_6
+      name: run-amarela.png-1.png_6
       rect:
         serializedVersion: 2
         x: 192
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c6e549e2e65cc1418a6005aef3ea9c9
-      internalID: 425948781
+      spriteID: e4f4feb53c45f9b47ab5c528a8d8536c
+      internalID: -1604881644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_7
+      name: run-amarela.png-1.png_7
       rect:
         serializedVersion: 2
         x: 224
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86291474dc17a4d4ba019450ee8e28de
-      internalID: 1308480012
+      spriteID: e9670b59b5686714695f0aef505a8d59
+      internalID: 1896535654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_8
+      name: run-amarela.png-1.png_8
       rect:
         serializedVersion: 2
         x: 256
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c011605f67cfbc48a6766a32f35b28a
-      internalID: 207243348
+      spriteID: 55760463f895fbf428380f68a0a0c4c6
+      internalID: 77883006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_9
+      name: run-amarela.png-1.png_9
       rect:
         serializedVersion: 2
         x: 288
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df56ecd1c6b2fa0429cca3176611256a
-      internalID: 864226721
+      spriteID: ec223636fd9dd3b4683389364e2a770e
+      internalID: 664098323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_10
+      name: run-amarela.png-1.png_10
       rect:
         serializedVersion: 2
         x: 320
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d7490f2c593c184a9e211e376bedf0d
-      internalID: -1409836166
+      spriteID: 9a427e3a1cba5414591608657e9b20b9
+      internalID: -612718470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_11
+      name: run-amarela.png-1.png_11
       rect:
         serializedVersion: 2
         x: 352
@@ -368,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 760c54cb6571c3e419b7ef6f0df9579a
-      internalID: 1247035112
+      spriteID: 9c9a64189a4b9ed40accc3094d7f7a09
+      internalID: -252737400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-amarela.png_12
+      name: run-amarela.png-1.png_12
       rect:
         serializedVersion: 2
         x: 384
@@ -389,8 +389,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 186241586fb7e514292e249c210ef475
-      internalID: -843069349
+      spriteID: 5e496e220c787aa48b32733994d5ad57
+      internalID: -203895912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run-amarela.png-1.png_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23072ccff3a430f42aff7ef0e71d5945
+      internalID: -572303351
       vertices: []
       indices: 
       edges: []
@@ -406,19 +427,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle-amarela.png_0: 974814133
-      idle-amarela.png_1: 257689175
-      idle-amarela.png_10: -1409836166
-      idle-amarela.png_11: 1247035112
-      idle-amarela.png_12: -843069349
-      idle-amarela.png_2: 1157460672
-      idle-amarela.png_3: -341328066
-      idle-amarela.png_4: -1929349957
-      idle-amarela.png_5: 547752306
-      idle-amarela.png_6: 425948781
-      idle-amarela.png_7: 1308480012
-      idle-amarela.png_8: 207243348
-      idle-amarela.png_9: 864226721
+      run-amarela.png-1.png_0: -2008265153
+      run-amarela.png-1.png_1: -1686175924
+      run-amarela.png-1.png_10: -612718470
+      run-amarela.png-1.png_11: -252737400
+      run-amarela.png-1.png_12: -203895912
+      run-amarela.png-1.png_13: -572303351
+      run-amarela.png-1.png_2: 482387263
+      run-amarela.png-1.png_3: 405894733
+      run-amarela.png-1.png_4: -2001578492
+      run-amarela.png-1.png_5: 1099244134
+      run-amarela.png-1.png_6: -1604881644
+      run-amarela.png-1.png_7: 1896535654
+      run-amarela.png-1.png_8: 77883006
+      run-amarela.png-1.png_9: 664098323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

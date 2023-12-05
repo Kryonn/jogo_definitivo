@@ -30,7 +30,7 @@ public class Galinhas_npc : MonoBehaviour
         {
             sr.enabled = false;
             circle.enabled = false;
-            Destroy(gameObject, 1f); 
+            Destroy(gameObject, 0f); 
         }
         
     }

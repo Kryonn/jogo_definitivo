@@ -42,7 +42,7 @@ public class Spawner2 : MonoBehaviour
             var position = new Vector3(wanted, y);
             GameObject gameObject = Instantiate(obstpre[Random.Range(0, obstpre.Length)], position, Quaternion.identity); 
             yield return new WaitForSeconds(temp);
-            Destroy(gameObject, 7f);
+            Destroy(gameObject, 6f);
         }
     }
 }

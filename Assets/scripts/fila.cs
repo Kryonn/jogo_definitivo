@@ -21,6 +21,7 @@ public class fila : MonoBehaviour
         public int cor;
         public GameObject obj;
         public Galinha Next;
+        public float coord;
     }
 
     void Update()
@@ -87,6 +88,7 @@ public class fila : MonoBehaviour
                     }
                 }
             }
+            g.coord = -5.73f - Qtd * 0.5f;
             
             if (Vazio())
             {
@@ -105,6 +107,7 @@ public class fila : MonoBehaviour
     public void Retira(out int cor, out bool ok)
     {
         Galinha g;
+        int cont = 0;
         if (Vazio())
         {
             cor = 5;
@@ -126,7 +129,15 @@ public class fila : MonoBehaviour
                 Primeiro = g.Next;
             }
             Destroy(g.obj, 0f);
-            g = null;
+            g = Primeiro;
+            while(g != null)
+            {
+                Vector3 position = new Vector3(-5.73f - cont * 0.5f, y);
+                Destroy(g.obj, 0f);
+                g.obj = Instantiate(Cores[g.cor - 1], position, Quaternion.identity);
+                g = g.Next;
+                cont++;
+            }
         }
     }
 }
