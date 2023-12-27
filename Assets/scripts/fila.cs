@@ -7,12 +7,12 @@ public class fila : MonoBehaviour
     public Galinha Primeiro;
     public Galinha Ultimo;
     public int Qtd;
-    //public GameObject[] Cor1;
-    //public GameObject[] Cor2;
-    //public GameObject[] Cor3;
-    //public GameObject[] Cor4;
     public List<GameObject> Cores;
+    public List<int> pontuacoes;
+    public List<GameObject> colisao;
+    private GameObject dead;
     public float y;
+    public float y2;
     player a;
 
 
@@ -28,6 +28,7 @@ public class fila : MonoBehaviour
     {
         a = FindObjectOfType<player>();
         y = a.y;
+        y2 = a.y2;
     }
 
 
@@ -66,6 +67,7 @@ public class fila : MonoBehaviour
             {
                 g.cor = 1;
                 g.obj = Instantiate(Cores[0], position, Quaternion.identity);
+                score.instance.score_total += pontuacoes[0];
             }
             else
             {
@@ -73,6 +75,7 @@ public class fila : MonoBehaviour
                 {
                     g.cor = 2;
                     g.obj = Instantiate(Cores[1], position, Quaternion.identity);
+                    score.instance.score_total += pontuacoes[1];
                 }
                 else
                 {
@@ -80,11 +83,13 @@ public class fila : MonoBehaviour
                     {
                         g.cor = 3;
                         g.obj = Instantiate(Cores[2], position, Quaternion.identity);
+                        score.instance.score_total += pontuacoes[2];
                     }
                     else
                     {
                         g.cor = 4;
                         g.obj = Instantiate(Cores[3], position, Quaternion.identity);
+                        score.instance.score_total += pontuacoes[3];
                     }
                 }
             }
@@ -116,7 +121,7 @@ public class fila : MonoBehaviour
         else
         {
             cor = Primeiro.cor;
-            Qtd--;
+            Qtd--; 
             ok = true;
             g = Primeiro;
             if (Primeiro == Ultimo)
@@ -128,7 +133,11 @@ public class fila : MonoBehaviour
             {
                 Primeiro = g.Next;
             }
+            score.instance.score_total -= pontuacoes[g.cor - 1];
             Destroy(g.obj, 0f);
+            Vector3 pos = new Vector3(-5.73f, y2);
+            dead = Instantiate(colisao[g.cor - 1], pos, Quaternion.identity);
+            Destroy(dead, 2f);
             g = Primeiro;
             while(g != null)
             {

@@ -17,7 +17,9 @@ public class player : MonoBehaviour
     public bool ok;
     public fila f;
     public float y;
+    public float y2;
     public bool hit;
+    public List<int> pontuacoes;
     
 
 
@@ -39,6 +41,7 @@ public class player : MonoBehaviour
         Jump();
 
         y = rig.position.y;
+        y2 = rig.position.y;
         if(rig.position.y >= 2)
         {
             y = 2.933118f;
@@ -68,13 +71,13 @@ public class player : MonoBehaviour
         if(allow == true)
         {
             f.Insere(cor, out ok);
-            
             allow = false;
         }
 
         if(hit == true)
         {
             f.Retira(out cor, out ok);
+            StartCoroutine(hit_anim());
             hit = false;
         }
 
@@ -202,5 +205,12 @@ public class player : MonoBehaviour
         Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 
+    private IEnumerator hit_anim()
+    {
+        anim.SetBool("hit", true);
+        yield return new WaitForSeconds(0.5f);
+        anim.SetBool("hit", false);
+    }
+    
 
 }
