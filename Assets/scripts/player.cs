@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class player : MonoBehaviour
     public float JumpForce;
     private GameObject current;
     [SerializeField] private BoxCollider2D playerCollider;
+    pause a;
 
     public bool isjumping;
     public bool plat3;
@@ -20,6 +22,11 @@ public class player : MonoBehaviour
     public float y2;
     public bool hit;
     public List<int> pontuacoes;
+    public GameObject go_screen;
+    public bool go_pause;
+    public GameObject pause_screen;
+    public bool go;
+    public bool freeze;
     
 
 
@@ -31,7 +38,9 @@ public class player : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         start = true;
+        go_pause = false;
         f.cria();
+        go = false;
     }
 
     // Update is called once per frame
@@ -39,6 +48,7 @@ public class player : MonoBehaviour
     {
         Move();
         Jump();
+        a = FindObjectOfType<pause>();
 
         y = rig.position.y;
         y2 = rig.position.y;
@@ -77,16 +87,24 @@ public class player : MonoBehaviour
         if(hit == true)
         {
             f.Retira(out cor, out ok);
-            StartCoroutine(hit_anim());
-            hit = false;
+            if(ok == false)
+            {
+                dead();
+            }
+            else
+            {
+                StartCoroutine(hit_anim());
+                hit = false;
+            }
         }
+
+        pause();
 
         
     }
 
     void Move()
     {
-
         if(start == true)
         {
             anim.SetBool("walk", true);
@@ -211,6 +229,42 @@ public class player : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("hit", false);
     }
+
+    public void dead()
+    {
+        go_pause = true;
+        go = true;
+        go_screen.SetActive(true);   
+    }
+
+    public void restart()
+    {
+        SceneManager.LoadScene("Jogo");
+    }
+
+    public void pause()
+    {
+        if(go == false)
+        {
+            if(a.on == true)
+            {
+                pause_screen.SetActive(true);
+            }
+            else
+            {
+                pause_screen.SetActive(false);
+            }
+        }
+    }
+
+    public void main_menu()
+    {
+        freeze = false;
+        SceneManager.LoadScene("start");
+        freeze = true;
+    }
+
+    
     
 
 }

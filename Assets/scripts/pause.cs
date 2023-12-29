@@ -5,6 +5,7 @@ using UnityEngine;
 public class pause : MonoBehaviour
 {
     public bool on;
+    public bool on1;
     public bool go_pause;
     player a;
 
@@ -20,7 +21,7 @@ public class pause : MonoBehaviour
     void Update()
     {
         go_pause = a.go_pause;
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) || a.freeze == true)
         {
             pausar();
         }
@@ -48,6 +49,6 @@ public class pause : MonoBehaviour
     private void go_pausar()
     {
         Time.timeScale = 0f;
-        on = true;
+        on1 = true;
     }
 }
