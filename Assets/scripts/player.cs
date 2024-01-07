@@ -27,6 +27,7 @@ public class player : MonoBehaviour
     public GameObject pause_screen;
     public bool go;
     public bool freeze;
+    public bool pre_dialogo;
     
 
 
@@ -41,6 +42,7 @@ public class player : MonoBehaviour
         go_pause = false;
         f.cria();
         go = false;
+        pre_dialogo = true;
     }
 
     // Update is called once per frame
